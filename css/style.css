@@ -220,11 +220,16 @@ ul{
     padding: 1rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px)
+{
    
-    /* nav .container .nav-link a {
-        display: block;
-    }  */
-    
+    nav {
+        background: white;
+        padding: 1rem;
+        position: fixed;
+        width: 50%;
+        top: 0;
+        z-index: 10;
+    }
 }
 
