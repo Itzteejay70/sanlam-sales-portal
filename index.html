@@ -20,6 +20,21 @@
   <title>Sanlam</title>
 </head>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.getElementById("nav-toggle");
+    const navLinks = document.querySelectorAll("nav .nav-link a");
+
+    if (!navToggle || navLinks.length === 0) return;
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navToggle.checked = false; // close menu
+      });
+    });
+  });
+</script>
+
 <body>
  <!-- Replace your current nav with this -->
 <nav>
@@ -81,7 +96,7 @@
   <section>
     <div class="grid-container">
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-graduation-cap"></i></div>
         <h3>FlexiEdu plan</h3>
         <p>
           Plan the future of your children by ensuring their education at all
@@ -91,7 +106,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+       <div class="icons"><i class="fa-solid fa-money-bill-wave"></i></div>
         <h3>Flexi-cash Plan</h3>
         <p>
           Save periodically and benefit from lump sums at specific intervals
@@ -101,7 +116,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-piggy-bank"></i></div>
         <h3>Flexi-save Plan</h3>
         <p>
           Save in the medium and long term and benefit from a flat-rate benefit
@@ -111,14 +126,14 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+       <div class="icons"><i class="fa-solid fa-umbrella-beach"></i></div>
         <h3>Personal Retirement Plan</h3>
         <p>Create your own retirement capital and live your golden age as you wish</p>
         <button type="button">Buy now</button>
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+       <div class="icons"><i class="fa-solid fa-wallet"></i></div>
         <h3>SabiSavers Plan</h3>
         <p>
           Benefit from insurance that adapts to your earnings and savings needed
@@ -127,7 +142,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-chart-line"></i></div>
         <h3>SavingsPlus Plan</h3>
         <p>
           Determine the amount of your savings and benefit from regular returns
@@ -137,7 +152,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-shield-halved"></i></div>
         <h3>Family Shield Plan</h3>
         <p>
           Take advantage of an annual renewable plan that provides death and
@@ -147,7 +162,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-hand-holding-heart"></i></div>
         <h3>Family Shield Plus</h3>
         <p>
           Get coverage to help manage expenses in the event of death or
@@ -157,7 +172,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-lock"></i></div>
         <h3>Smart Protection Plan</h3>
         <p>
           Treat yourself to full protection in the event of death and total
@@ -167,7 +182,7 @@
       </article>
 
       <article class="quote">
-        <div class="icons" aria-hidden="true"></div>
+        <div class="icons"><i class="fa-solid fa-calendar-check"></i></div>
         <h3>Guaranteed Lifetime Retirement Income Plan</h3>
         <p>
           Maintain your standard of living in retirement by ensuring a regular

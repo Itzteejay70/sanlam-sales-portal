@@ -213,6 +213,14 @@ section .container {
   width: 70px;
   border-radius: 100%;
   background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons i {
+  font-size: 28px;
+  color: var(--primary-color);
 }
 
 /* =========================
